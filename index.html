@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>We Are Stars</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to We Are Stars</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Connecting Talent with Opportunity</h2>
+            <p>Join us in showcasing your talent!</p>
+        </section>
+        <section class="gallery">
+            <h3>Featured Talents</h3>
+            <!-- Placeholder for gallery images -->
+            <div id="gallery"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 We Are Stars</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Us - We Are Stars</title>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>We connect talents with opportunities across the globe.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 We Are Stars</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us - We Are Stars</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <label>
+                <input type="checkbox" name="consent" required> I consent to data collection
+            </label>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 We Are Stars</p>
+    </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey - We Are Stars</title>
+</head>
+<body>
+    <header>
+        <h1>Survey</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submit_survey.php" method="POST">
+            <fieldset>
+                <legend>Your Feedback</legend>
+                <label for="text-input">Your Name:</label>
+                <input type="text" id="text-input" name="name" required>
+
+                <label for="date-input">Your Birth Date:</label>
+                <input type="date" id="date-input" name="birthdate" required>
+
+                <label>Rate our service:</label>
+                <input type="radio" name="rating" value="Excellent" required> Excellent
+                <input type="radio" name="rating" value="Good"> Good
+                <input type="radio" name="rating" value="Average"> Average
+
+                <label>Interests:</label>
+                <input type="checkbox" name="interests[]" value="Acting"> Acting
+                <input type="checkbox" name="interests[]" value="Influencing"> Influencing
+
+                <label for="dropdown">Select your age group:</label>
+                <select id="dropdown" name="age_group" required>
+                    <option value="16-25">16-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46-55">46-55</option>
+                    <option value="56-90">56-90</option>
+                </select>
+            </fieldset>
+            <button type="submit">Submit Survey</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 We Are Stars</p>
+    </footer>
+</body>
+</html>
+
+
+
